@@ -1,0 +1,64 @@
+.contact-container{
+  background-color: #f4bc50;
+  height: 450px;
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact subscribe"
+                        "footer footer";
+
+}
+
+.contact{
+  grid-area: contact;
+  justify-self: start;
+  margin-left: 250px;
+}
+
+.subscribe{
+  grid-area: subscribe;
+  justify-self: start;
+  margin-left: 100px;
+}
+
+.footer{
+  grid-area: footer;
+  border-top: solid black;
+  margin: 10px 70px 0 70px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+
+@media (max-width: 800px) {
+  .contact-container{
+    font-size: small;
+    margin-top: 0;
+    height: 650px;
+    grid-template-columns: 1fr;
+    grid-template-areas:"contact"
+                          "subscribe"
+                          "footer";
+
+  }
+
+  .contact{
+    justify-self: center;
+    margin-left: 1px;
+  }
+
+  .subscribe{
+    justify-self: center;
+    margin-left: 1px;
+    margin-top: 10px;
+  }
+
+  .footer{
+    border-top: solid black;
+    margin: 20px 20px 0 20px;
+
+  }
+
+
+}

@@ -1,0 +1,9 @@
+<div class="location-container">
+<div class="listing-card" *ngFor="let location of LocationsService.locationList " style="justify-content: center;">
+  <img class="listing-photo" [src]="location.photo" alt="photo of {{location.name}}">
+  <a (click)="goToLink(location.sm)"><h4 class="listing-heading">{{ location.name }}</h4></a>
+  <h5 class="listing-day">{{ location.day}}</h5>
+  <p class="listing-hour">{{location.hours }}</p>
+  <a (click)="goToLink(location.direction)"><button class="btn btn-warning">GET DIRECTIONS</button></a>
+</div>
+</div>

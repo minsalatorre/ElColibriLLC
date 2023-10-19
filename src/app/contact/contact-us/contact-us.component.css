@@ -1,0 +1,51 @@
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.social-media
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h2{
+  margin-bottom: 30px;
+
+}
+
+.location{
+  text-decoration-line: underline;
+}
+
+.location > a:hover {
+  color: #c9208a;
+  box-shadow: inset;
+}
+
+.social-media > a:hover {
+  color: #c9208a;
+  box-shadow: inset;
+}
+
+.circle{
+  background: #FF7A59;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: start;
+
+}
+
+
+
+@media (max-width: 800px) {
+  .contact-info{
+    align-items: center;
+    margin-top: 20px;
+
+  }
+}

@@ -1,0 +1,21 @@
+.collapse.navbar-collapse{
+  justify-content: flex-end;
+
+}
+
+.container-fluid
+{
+  padding: auto;
+  margin-top: 0%;
+
+}
+
+a{
+  justify-content: space-between;
+}
+
+.nav-link.btn.btn-outline-warning{
+  margin: 0 10px 0 10px ;
+  border-color: #814a95;
+  color: white;
+}

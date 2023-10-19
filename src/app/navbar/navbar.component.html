@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #814a95;">
+	<div class="container-fluid" >
+    <a class="navbar-brand me-2" [routerLink]="['/']">
+      <img
+        src="/assets/logo.png"
+        height="70"
+        alt="logo"
+        loading="lazy"
+        style="margin-top: -1px;"
+      />
+    </a>
+
+		<button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed"><span class="navbar-toggler-icon"></span></button>
+		<div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" >
+			<ul class="navbar-nav d-flex align-items-center">
+				<li class="nav-item ">
+					<a class="nav-link btn btn-outline-warning" [routerLink]="'/'" (click)="isMenuCollapsed = true" >Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-outline-warning" [routerLink]="'/menu'" (click)="isMenuCollapsed = true">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-outline-warning" [routerLink]="'/aboutus'" (click)="isMenuCollapsed = true">About Us</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link btn btn-outline-warning" [routerLink]="'/locations'" (click)="isMenuCollapsed = true">Locations</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+

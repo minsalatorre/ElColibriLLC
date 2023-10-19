@@ -1,0 +1,34 @@
+.subscribe-info{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+}
+h2{
+  margin-bottom: 15px;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+button{
+  margin-top: 5px;
+  background-color: #814a95;
+  color: white;
+  justify-self: start;
+  width: 35%;
+  border-color:  #814a95 ;
+
+}
+
+@media (max-width: 800px) {
+  .subscribe-info{
+    margin-top: 0px;
+    width: 100%;
+    align-items: center;
+    justify-self: center;
+  }
+
+
+}

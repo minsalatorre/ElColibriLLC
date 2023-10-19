@@ -1,0 +1,87 @@
+
+.location-container{
+  display: flex;
+  justify-content: center;
+}
+.listing-card {
+  border-radius: 5px;
+  border: 1px solid;
+  width: 500px;
+  height: 400px;
+  margin: 50px 30px 50px 30px;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  align-content: space-around;
+}
+.listing-heading {
+  border-radius: 5px;
+  color: black;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #814A95;
+  margin: 15px .15rem 10px .15rem;
+  padding: 0 .35rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.listing-photo {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.listing-day {
+  text-decoration: underline;
+  margin-top: 5px;
+  position: inherit;
+}
+
+.listing-hour {
+  margin-top: 5px;
+  position: inherit;
+}
+
+h4:hover {
+  border-radius: 5px;
+  box-shadow: inset 2000px 0 0 0 #814A95;
+  color:  white;
+  text-decoration: none;
+}
+
+
+button{
+    background-color: #814A95;
+    border: #f4bc50;
+    color: white
+
+
+  }
+
+@media (max-width: 900px) {
+
+  .location-container{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .listing-card {
+    grid-area: listing-card;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 80%;
+    height: 300px;
+    margin: 20px 30px;
+
+  }
+
+  .listing-photo {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  }
