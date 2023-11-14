@@ -1,3 +1,48 @@
 <app-navbar></app-navbar>
-<p>menu works!</p>
+<h1 class="menu-header">Menu</h1>
+<div class="menu-container">
+    <div class="section-container-2" *ngFor="let section of menu">
+        <h1 class="section-title">{{ section.sectionTitle }}</h1>
+        <div class="items-container">
+            <div class="item-card" *ngFor="let item of section.items" >
+                <img class="item-photo" [src]="item.photo" alt="photo of {{item.name}}">
+                <div class="item-info" style="justify-content: center;">
+                    <h4>{{ item.name }} {{ item.price}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            <div class="flavors-container" *ngIf="section.sectionTitle.includes('Aguas Frescas')">
+                <h3 class="flavors-title">Flavors</h3>
+                <div class="flavors-options">
+                    <div class="flavors-info" *ngFor="let flavor of flavors">
+                         <h6 class="flavors-name">{{ flavor.flavor }} </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="protains-container" *ngIf="section.sectionTitle.includes('Gorditas y Huaraches')">
+            <h3 class="proteins-title">Choose your protein:</h3>
+            <div class="proteins-options">
+                <div class="protein-info" *ngFor="let protein of proteins">
+                     <h6 class="protein-name">{{ protein.name }} </h6>
+                    <p class="protein-description">{{protein.description}}</p>
+                </div>
+
+            </div>
+        </div>
+       
+
+    </div>
+    
+    <div class="seasonal-container">
+        <h1 class="section-title">Seasonal</h1>
+        <div class="items-container">
+        <div class="seasonal-card" *ngFor="let item of seasonal">
+            <img class="seasonal-photo" [src]="item.photo" alt="photo of {{item.name}}">
+            <h4 class="seasonal-name">{{ item.name }} </h4>
+        </div>
+    </div>
+    </div>
+
+</div>
 <app-contact></app-contact>

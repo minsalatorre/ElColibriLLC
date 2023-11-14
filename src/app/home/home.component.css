@@ -49,7 +49,7 @@ button{
 }
 
 #carouselExampleAutoplaying{
-  height: 550px;
+  height: 600px;
   position: relative;
 }
 
@@ -63,7 +63,10 @@ button{
 
 .carousel > .carousel-inner > .carousel-item > img{
   width:640px;
-  height: 600px;
+  height: 640px;
+  object-position: 50% 50%;
+  object-fit: cover;
+  
 
 }
 

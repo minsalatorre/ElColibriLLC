@@ -1,5 +1,5 @@
 .about-container{
-  margin: 40px 20px 40px 20px;
+  margin: 40px 40px 40px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "images about-text";
@@ -55,9 +55,153 @@ background-color: #f4bc50;
   height: 400px;
   border-radius: 10px;
   object-fit: cover;
-  object-position: 55% 50%;
+  object-position: 55% 45%;
 
+}
+
+.history{
+  margin-right: 50px;
+  font-size: large;
+}
+
+.team-container{
+  margin: 40px 70px 40px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "teamtext teamimg";
+  align-items: center;
+  border-top: solid 1px black;
+  padding-top: 50px;
+
+}
+
+.ourteam-text{
+  grid-area: teamtext;
+  font-size: large;
+  
+}
+
+.ourteam-img{
+  grid-area: teamimg;
+  width: 70%;
+  justify-self:center;
+}
+
+.teamimg{
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 50% 69%;
+  
+}
+
+.members-container{
+  display: flex;
+  margin:40px 40px 40px 40px;
+  padding-top: 50px;
+
+}
+
+.member{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "memberimg"
+                      "membertext" ;                
+}
+
+.member-text{
+  grid-area: membertext;
+  font-size: medium;
+  padding: 10%;
+  
+}
+
+.member-img{
+  grid-area: memberimg;
+  width: 70%;
+  justify-self:center;
+}
+
+.memberimg{
+  width: 100%;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 59%;
+  
 }
 
 
 
+@media (max-width: 800px) {
+ 
+  .img-header{
+    height: 200px;
+  }
+ 
+  .about-container{
+    margin: 20px 20px 20px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:"images"
+                        "about-text";
+  }
+
+  .history{
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+
+  #carouselExampleAutoplaying{
+    height: 250px;
+    width: 100%;
+  
+  }
+  
+  .carousel > .carousel-inner > .carousel-item > img{
+    width: 100%;
+    height: 250px;
+  }
+
+  .team-container{
+    margin: 40px 20px 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: "teamimg"
+                         "teamtext";
+    
+  }
+
+  .ourteam-text{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .ourteam-img{
+    width: 80%;
+  }
+
+
+
+  .teamimg{
+    width: 100%;
+    height: 200px;
+  }
+
+  .members-container{
+    flex-direction: column;
+  
+  }
+
+  .memberimg{
+    width: 200px;
+    height: 220px;
+  }
+
+  .member-text{
+    padding: 5%;
+    
+  }
+
+}

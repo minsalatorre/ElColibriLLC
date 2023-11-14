@@ -1,8 +1,6 @@
 import { LocationsService } from './../locations.service';
 import { Component,  Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { Locationdetails } from '../locationdetails';
-import {RouterLink, RouterOutlet} from "@angular/router";
 
 @Component({
   selector: 'app-locations-list',

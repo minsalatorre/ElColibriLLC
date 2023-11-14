@@ -3,96 +3,81 @@
 <header>
   <div class="container-header">
     <img class="img-header" src="/assets/Adda2022.jpg" alt="">
-    <div class="centered" >
+    <div class="centered">
       <h1>About us</h1>
     </div>
   </div>
-  </header>
-  <section class="about-container" >
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner" id="carousel-fade">
-          <div class="carousel-item active">
-            <img
-              src="/assets/CMU-Tedtalk.jpg"
-              class="d-block w-100"
-              alt="order tacos"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/TF2022.jpg"
-              class="d-block w-100"
-              alt="cactus huarache"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/vegan-fest-2023.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img src="/assets/gorditas-onprocess.jpg" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/jeimy-tt.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/TF2023.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/Adda2022.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/assets/el-colibri-sign.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+</header>
+<section class="about-container">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="carousel-fade">
+      <div class="carousel-item active">
+        <img src="/assets/CMU-Tedtalk.jpg" class="d-block w-100" alt="order tacos" />
       </div>
-      <div style="text-align:center">
-        <h2>Back in 2022...</h2>
-        <p>El Colibri  was established with a passion for sharing the vibrant flavors and traditional recipes from the streets of Mexico. </p>
-
-         <p>For us the decision to emphasize more plants based meals is a way to reconnect with our Indigenous roots. While fish and wild game were a part of the pre-Hispanic diet, plants formed the foundation of our Indigenous food culture. </p>
+      <div class="carousel-item">
+        <img src="/assets/TF2022.jpg" class="d-block w-100" alt="cactus huarache" />
       </div>
+      <div class="carousel-item">
+        <img src="/assets/vegan-fest-2023.jpg" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/jeimy-tt.jpg" class="d-block w-100" alt="..." />
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/TF2023.jpg" class="d-block w-100" alt="..." />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="history" style="text-align:center">
+    <h2 style="color: #c9208a"> Back in 2022...</h2>
+    <p>El Colibri was established with a passion for sharing the vibrant flavors and traditional recipes from Mexico.
+    </p>
+    <p>For us the decision to emphasize more plants based meals is a way to reconnect with our Indigenous roots. While
+      fish and wild game were a part of the pre-Hispanic diet, plants formed the foundation of our Indigenous food
+      culture. </p>
+    <p>Our goal here at El Colibri is simple; we strive to serve our customers real Mexico City style street food that
+      is consistently delicious and always affordable.
+    </p>
+  </div>
+</section>
 
-    </section>
+<section class="team-container">
+  <div class="ourteam-text" style="text-align:center">
+    <h2>Our Team</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Mauris augue neque gravida in
+      fermentum et sollicitudin ac orci. Risus sed vulputate odio ut. Eu feugiat pretium nibh ipsum consequat. Dignissim
+      sodales ut eu sem integer vitae justo. In arcu cursus euismod quis viverra nibh. Odio eu feugiat pretium nibh
+      ipsum. Consequat interdum varius sit amet. Dui nunc mattis enim ut tellus. Bibendum enim facilisis gravida neque
+      convallis. </p>
+  </div>
+  <div class="ourteam-img" style="justify-content: center;">
+    <img class="teamimg" src="/assets/Adda2022.jpg" alt="" height=>
+  </div>
+</section>
+
+<section class="members-container">
+
+  <div class="member" *ngFor="let member of MembersService.membersList " style="text-align:center">
+    <div class="member-text" style="text-align:center">
+      <h2>{{member.name}}</h2>
+      <p> {{member.description}} </p>
+    </div>
+    <div class="member-img" style="justify-content: center;">
+      <img class="memberimg" [src]="member.photo" alt="photo of {{member.name}}">
+    </div>
+  </div>
+</section>
+
+
 <app-contact></app-contact>

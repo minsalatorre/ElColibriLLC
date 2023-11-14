@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MembersService } from '../members.service';
+import { MemberInfo } from '../member-info';
 
 @Component({
   selector: 'app-aboutus-details',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./aboutus-details.component.css']
 })
 export class AboutusDetailsComponent {
+
+  constructor(public MembersService: MembersService){}
+  @Input() member!: MemberInfo;
+  
 
 }
